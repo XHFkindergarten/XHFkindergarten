@@ -22,7 +22,7 @@
         <img class='ercode_img' src='https://img30.360buyimg.com/ling/jfs/t1/163371/5/3937/181768/600d1dfbE50aa67e1/a9c7e1a498db978e.jpg' />
       </div>
       <p class='extra'>
-        Weibo: <a class='weibo' target="_blank" :href="__env__ === 'PC' ? 'https://weibo.com/u/6905636607?nick=AsyncT2sk' : 'sinaweibo://userinfo?uid=6905636607'">AsyncT2sk</a>
+        Weibo: <a class='weibo' target="_blank" href="https://weibo.com/u/6905636607?nick=AsyncT2sk">AsyncT2sk</a>
         <!-- Weibo: <a href='sinaweibo://userinfo?uid=6905636607'>AsyncT2sk</a> -->
       </p>
       <p class='extra'>
@@ -43,16 +43,13 @@ export default defineComponent({
     Wechat
   },
   setup () {
-    // 当前环境
-    const __env__ = getEnv()
     const showImage = ref(false)
     const toggleImage = () => {
       showImage.value = !showImage.value
     }
     return {
       showImage,
-      toggleImage,
-      __env__
+      toggleImage
     }
   }
 })
