@@ -17,6 +17,7 @@ export default defineComponent({
 </script>
 
 <style lang='scss'>
+// 引入字体
 @import url('./assets/fonts/font.css');
 
 body {
